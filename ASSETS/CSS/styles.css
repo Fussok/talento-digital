@@ -1,0 +1,53 @@
+body {
+    background-color: #f4f7f4;
+    font-family: Arial, sans-serif;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+@media (min-width: 576px) { 
+   
+    img {
+    width: 80px;
+    height: 80px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    article h3 {
+        font-size: 1.1rem;
+        margin: 0 0 5px 0;
+    }
+
+
+
+ }
+@media (min-width: 992px) { 
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    article {
+        margin-bottom: 0;
+    }
+    img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    }
+ }
